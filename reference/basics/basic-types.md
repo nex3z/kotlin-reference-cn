@@ -52,6 +52,7 @@ val bytes = 0b11010010_01101001_10010100_10010010
 
 在 Java 平台上，数值类型以 JVM 基本类型（Primitive Type）的形式存储。当需要可为空（Nullable）的数值引用（如 Int?）或泛型时，数值类型会被装箱（Boxing）。
 
+<a name="注1返回"></a>
 注意装箱后的数值不一定会保持一致性（Identity）：
 
 ```kotlin
@@ -109,6 +110,7 @@ val i: Int = b.toInt() // OK: explicitly widened
 - `toDouble(): Double`
 - `toChar(): Char`
 
+<a name="注2返回"></a>
 缺乏隐式转换并不会带来明显的问题，因为实际类型可以通过上下文推断出来，且操作符已经为合适的转换进行了重载，例如：
 
 ```kotlin
@@ -273,7 +275,10 @@ ${'$'}9.99
 """
 ```
 
-<a name="注1"></a>【注 1】Kotlin 中，`===` 检查的是引用的相等性，即检查两个引用是否指向同一个对象；`==` 检查的是结构的相等性，即检查 `equals()`。更多信息可参考[相等性](https://blog.nex3z.com/2017/06/20/kotlin-reference-equality/)。
+
+---
+
+<a name="注1"></a>【注 1】Kotlin 中，`===` 检查的是引用的相等性，即检查两个引用是否指向同一个对象；`==` 检查的是结构的相等性，即检查 `equals()`。更多信息可参考[相等性](https://blog.nex3z.com/2017/06/20/kotlin-reference-equality/)。[【返回】](#注1返回)
 
 <a name="注2"></a>【注 2】在 `val l = 1L + 3 // Long + Int => Long` 中，等号右边 `1L` 是 `Long` 型，`3` 是 `Int` 型。`Long` 的 `+` 操作符有针对 `Int` 的[重载](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/plus.html)：
 
@@ -281,4 +286,4 @@ ${'$'}9.99
 operator fun plus(other: Int): Long (source)
 ```
 
-即 `Long + Int` 的结果是 `Long`。故等号左边 `val l` 的类型是 `Long`。操作符重载的更多内容见[操作符重载](https://blog.nex3z.com/2017/06/21/kotlin-reference-operator-overloading/)。
+即 `Long + Int` 的结果是 `Long`。故等号左边 `val l` 的类型是 `Long`。操作符重载的更多内容见[操作符重载](https://blog.nex3z.com/2017/06/21/kotlin-reference-operator-overloading/)。[【返回】](#注2返回)
