@@ -15,3 +15,5 @@
 - [接口 Interfaces](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/interfaces.md)
 - [可见性修饰符 Visibility Modifiers](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/visibility-modifiers.md)
 - [扩展 Extensions](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/extensions.md)
+- [数据类 Data Classes](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/data-classes.md)
+- [密封类 Sealed Classes](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/sealed-classes.md)
