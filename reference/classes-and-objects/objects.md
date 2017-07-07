@@ -1,6 +1,6 @@
 # 对象表达式和声明
 
-有时候我们想对一个类进行些许修改，而又不想显式地声明一个新的子类。Java 使用*匿名内部类（Anonymous Inner Class）*的方式应对这种场景，Kotlin 使用*对象表达式（Object Expression）*和*对象声明（Object Declaration）*进一步拓展了这个概念。
+有时候我们想对一个类进行些许修改，而又不想显式地声明一个新的子类。Java 使用*匿名内部类*（Anonymous Inner Class）的方式应对这种场景，Kotlin 使用*对象表达式*（Object Expression）和*对象声明*（Object Declaration）进一步拓展了这个概念。
 
 
 ## 对象表达式
