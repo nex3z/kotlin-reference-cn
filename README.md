@@ -1,6 +1,6 @@
 # Kotlin 参考文档
 
-## 基础 Basics
+## 基础（Basics）
 
 - [基本类型（Basic Types）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/basics/basic-types.md)
 - [包（Packages）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/basics/packages.md)
@@ -8,7 +8,7 @@
 - [返回和跳转（Returns and Jumps）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/basics/returns-and-jumps.md)
 
 
-## 类和对象 Classes and Objects
+## 类和对象（Classes and Objects）
 
 - [类和继承（Classes and Inheritance）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/classes-and-inheritance.md)
 - [属性和字段（Properties and Fields）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/properties-and-fields.md)
@@ -23,5 +23,13 @@
 - [对象表达式和声明（Object Expressions and Declarations）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/objects.md)
 - [委托（Delegation）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/delegation.md)
 - [委托属性（Delegated Properties）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/delegated-properties.md)
+
+## 函数和 Lambda（Functions and Lambdas）
 - [函数（Functions）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/functions.md)
 - [高阶函数和 Lambda（Higher-Order Functions and Lambdas）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/lambdas.md)
+- [内联函数（Inline Functions）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/inline-functions.md)
+
+## 其他（Other）
+- [解构声明（Destructuring Declarations）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/destructuring-declarations.md)
+- [集合（Collections）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/collections.md)
+- [区间（Ranges）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/ranges.md)
