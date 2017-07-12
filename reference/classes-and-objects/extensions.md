@@ -84,7 +84,7 @@ fun C.foo(i: Int) { println("extension") }
 调用 `C().foo(1)` 会输出 `extension`。
 
 
-## 可为空的接收着
+## 可为空的接收者
 
 注意扩展可以定义在可为空（Nullable）的接收类型上，此类扩展可以在为 `null` 的对象上调用，然后在扩展体内进行 `this == null` 的检查。这也是 Kotlin 允许在不进行 `null` 检查的情况下调用 `toString()` 的原因：检查发生在扩展函数内。
 
