@@ -1,6 +1,6 @@
 # 基本类型
 
-Kotlin 中一切皆对象，也就是说，我们可以调用任意变量的成员函数和属性。虽然一些内置类型的实现经过了优化，但对用户来说，它们仍表现为普通的类，本节就描述了这些类型：数字、字符、布尔和数组。
+Kotlin 中一切皆对象，也就是说，我们可以调用任意变量的成员函数和属性。部分类型具有特殊的内部表示方法，如数字、字符和布尔类型在运行时可以用原始值（Primitive Value）表示，但从用户的角度来看，它们仍表现为普通的类。本节描述了 Kotlin 中的这些基本类型：数字、字符、布尔、数组和字符串。
 
 
 ## 数字
@@ -121,7 +121,7 @@ val l = 1L + 3 // Long + Int => Long
 
 ### 运算操作
 
-Kotlin 支持数值类型间的一系列标准运算，这些运算都声明为了对应类的方法（编译器会把调用优化为对应的指令），见 [操作符重载](https://blog.nex3z.com/2017/06/21/kotlin-reference-operator-overloading/)。
+Kotlin 支持数值类型间的一系列标准运算，这些运算都声明为了对应类的方法（编译器会把调用优化为对应的指令），见 [操作符重载](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/operator-overloading.md)。
 
 对于位运算，并没有专用的操作符，但可以用中缀的形式调用命名函数，如：
 
@@ -202,7 +202,7 @@ val asc = Array(5, { i -> (i * i).toString() })
 
 就像上面提到的，`[]` 操作表示调用 `get()` 和 `set()` 成员函数。
 
-注意：Kotlin 中的数组是不变量，这一点和 Java 不同。这意味着 Kotlin 不允许把 `Array<String>` 赋给 `Array<Any>`，因为这样可能会带来运行时错误（但可以使用 `Array<out Any>`，见[类型投射](https://blog.nex3z.com/2017/06/08/kotlin-reference-generics/#Type_projections)）。
+注意：Kotlin 中的数组是不变量，这一点和 Java 不同。这意味着 Kotlin 不允许把 `Array<String>` 赋给 `Array<Any>`，因为这样可能会带来运行时错误（但可以使用 `Array<out Any>`，见[类型投射](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/generics.md#类型投射)）。
 
 Kotlin 提供了一系列专用的类来表示基本类型数组，以避免装箱带来的开销，如 `ByteArray`、 `ShortArray`、 `IntArray` 等，这些数组并不继承自 `Array` 类，但提供了和 `Array` 相同的方法和属性。它们也有对应的工厂方法，如：
 
@@ -278,7 +278,7 @@ ${'$'}9.99
 
 ---
 
-<a name="注1"></a>【注 1】Kotlin 中，`===` 检查的是引用的相等性，即检查两个引用是否指向同一个对象；`==` 检查的是结构的相等性，即检查 `equals()`。更多信息可参考[相等性](https://blog.nex3z.com/2017/06/20/kotlin-reference-equality/)。[【返回】](#注1返回)
+<a name="注1"></a>【注 1】Kotlin 中，`===` 检查的是引用的相等性，即检查两个引用是否指向同一个对象；`==` 检查的是结构的相等性，即检查 `equals()`。更多信息可参考[相等性](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/equality.md)。[【返回】](#注1返回)
 
 <a name="注2"></a>【注 2】在 `val l = 1L + 3 // Long + Int => Long` 中，等号右边 `1L` 是 `Long` 型，`3` 是 `Int` 型。`Long` 的 `+` 操作符有针对 `Int` 的[重载](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/plus.html)：
 
@@ -286,4 +286,4 @@ ${'$'}9.99
 operator fun plus(other: Int): Long (source)
 ```
 
-即 `Long + Int` 的结果是 `Long`。故等号左边 `val l` 的类型是 `Long`。操作符重载的更多内容见[操作符重载](https://blog.nex3z.com/2017/06/21/kotlin-reference-operator-overloading/)。[【返回】](#注2返回)
+即 `Long + Int` 的结果是 `Long`。故等号左边 `val l` 的类型是 `Long`。操作符重载的更多内容见[操作符重载](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/operator-overloading.md)。[【返回】](#注2返回)
