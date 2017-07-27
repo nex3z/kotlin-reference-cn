@@ -74,7 +74,7 @@ when (x) {
 }
 ```
 
-也可以使用 `in`、`!in` 可以判断一个值是否位于[范围](https://blog.nex3z.com/2017/06/14/kotlin-reference-ranges/)或集合中：
+也可以使用 `in`、`!in` 可以判断一个值是否位于[区间](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/ranges.md)或集合中：
 
 ```kotlin
 when (x) {
@@ -86,7 +86,7 @@ when (x) {
 ```
 
 <a name="注1返回"></a>
-还可以使用 `is`、`!is` 来判断一个值是否为某个特定类型，需要注意的是，由于有[智能转换（Smart Cast）](https://blog.nex3z.com/2017/06/15/kotlin-reference-type-checks-casts/#Smart_Casts)，你可以直接访问该类型的方法和成员，而不必进行额外的检查：
+还可以使用 `is`、`!is` 来判断一个值是否为某个特定类型，需要注意的是，由于有[智能转换（Smart Cast）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/type-checks-and-casts.md#智能转换)，你可以直接访问该类型的方法和成员，而不必进行额外的检查：
 
 ```kotlin
 fun hasPrefix(x: Any) = when(x) {
@@ -176,7 +176,7 @@ do {
 
 ## 循环中的 break 和 continue
 
-Kotlin 支持在循环中使用传统的 `break` 和 `continue` 操作符，详见 [返回和跳转](https://blog.nex3z.com/2017/06/02/kotlin-reference-returns-and-jumps/)。
+Kotlin 支持在循环中使用传统的 `break` 和 `continue` 操作符，详见 [返回和跳转](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/basics/returns-and-jumps.md)。
 
 
 ---
