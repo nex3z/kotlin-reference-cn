@@ -10,7 +10,7 @@ data class User(val name: String, val age: Int)
 
 - `equals()` / `hashCode()` 对，
 - `toString()`，形式为 `"User(name=John, age=42)"`，
-- 按顺序对应每一个属性的 [`componentN()` 函数](https://blog.nex3z.com/2017/06/12/kotlin-reference-destructuring-declarations/)，
+- 按顺序对应每一个属性的 [`componentN()` 函数](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/destructuring-declarations.md)，
 - `copy()` 函数（见下）。
 
 如果以上函数已经在类中显式地声明，或者已从基类中继承得到，则不会自动生成该函数。
@@ -22,9 +22,9 @@ data class User(val name: String, val age: Int)
 - 数据类不能为 `abstract`、`open`、`sealed` 或 `inner`；
 - （在 1.1 版本之前）数据类只能实现接口。
 
-从 1.1 版本起，数据类可以继承其他类（例子见[密封类](https://blog.nex3z.com/2017/06/07/kotlin-reference-sealed-classes/)）。
+从 1.1 版本起，数据类可以继承其他类（例子见[密封类](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/sealed-classes.md)）。
 
-在 JVM 平台，如果希望生成的类具有一个无参构造器，则主构造器的所有参数必须都有默认值，详见[构造器](https://blog.nex3z.com/2017/06/04/kotlin-reference-classes-inheritance/#Constructors)。
+在 JVM 平台，如果希望生成的类具有一个无参构造器，则主构造器的所有参数必须都有默认值，详见[构造器](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/classes-and-inheritance.md#构造器)。
 
 ```kotlin
 data class User(val name: String = "", val age: Int = 0)
@@ -49,7 +49,7 @@ val olderJack = jack.copy(age = 2)
 
 ## 数据类和解构声明
 
-数据类也会生成一系列成分函数（Component Function），以用于[解构声明（Destructuring Declaration）](https://blog.nex3z.com/2017/06/12/kotlin-reference-destructuring-declarations/):
+数据类也会生成一系列成分函数（Component Function），以用于[解构声明（Destructuring Declaration）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/destructuring-declarations.md):
 
 ```kotlin
 val jane = User("Jane", 35) 
