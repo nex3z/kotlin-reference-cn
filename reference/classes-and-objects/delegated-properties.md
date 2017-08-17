@@ -229,7 +229,7 @@ class C {
 
 Kotlin 编译器为 `getValue()` 和 `setValue()` 提供了关于 `prop` 的全部必要信息，第一个参数 `this` 指外部类 `C` 的实例，`this::prop` 是 `KProperty` 的反射对象，描述了 `prop` 自身。
 
-注意从 Kotlin 1.1 起才支持在代码中使用如 `this::prop` 的语法指向 [绑定可调用引用](https://blog.nex3z.com/2017/06/25/kotlin-reference-reflection/#Bound_Function_and_Property_References_since_11) 。
+注意从 Kotlin 1.1 起才支持在代码中使用如 `this::prop` 的语法指向 [绑定可调用引用](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/reflection.md#绑定函数和属性引用起自-11) 。
 
 ### 提供委托（起自 1.1）
 
