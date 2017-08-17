@@ -80,4 +80,4 @@ val ordinal: Int
 
 
 ---
-<a name="注1"></a>【注 1】上面的代码中，`printAllValues<RGB>()` 以泛型的方式传递了枚举类 `RGB`，`printAllValues()` 通过 `enumValues<T>()` 获取了 `RGB` 中定义的所有枚举常量。`reified` 表示[具体化参数类型](https://blog.nex3z.com/2017/06/11/kotlin-reference-inline-functions/#Reified_type_parameters)。[【返回】](#注1返回)
+<a name="注1"></a>【注 1】上面的代码中，`printAllValues<RGB>()` 以泛型的方式传递了枚举类 `RGB`，`printAllValues()` 通过 `enumValues<T>()` 获取了 `RGB` 中定义的所有枚举常量。`reified` 表示[具体化参数类型](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/inline-functions.md#具体化类型参数)。[【返回】](#注1返回)
