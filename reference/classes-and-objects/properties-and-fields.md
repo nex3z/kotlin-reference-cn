@@ -171,11 +171,11 @@ public class MyTest {
 
 ## 覆盖属性
 
-见[覆盖属性](https://blog.nex3z.com/2017/06/04/kotlin-reference-classes-inheritance/#Overriding_Properties)。
+见[覆盖属性](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/classes-and-inheritance.md#覆盖属性)。
 
 
 ## 委托属性
 
 最常见的一类属性仅从支持字段中进行读取（或写入），而自定义 getter 和 setter 可以实现属性的任意行为。在这两种场景之间，还有其他常见的特定模式，比如延迟初始化值、根据 Key 读取 Map，读取数据库、在被访问时通知监听者等。
 
-这些行为可以通过[委托属性（Delegated Property）](https://blog.nex3z.com/2017/06/10/kotlin-reference-delegated-properties/)以库的形式实现。
+这些行为可以通过[委托属性（Delegated Property）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/delegated-properties.md)以库的形式实现。

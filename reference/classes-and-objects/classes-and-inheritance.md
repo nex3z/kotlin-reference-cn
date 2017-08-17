@@ -65,7 +65,7 @@ class Person(val firstName: String, val lastName: String, var age: Int) {
 class Customer public @Inject constructor(name: String) { ... }
 ```
 
-更多信息请参考[可见性修饰符](https://blog.nex3z.com/2017/06/06/kotlin-reference-visibility-modifiers/#Constructors)。
+更多信息请参考[可见性修饰符](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/visibility-modifiers.md#构造器)。
 
 #### 次构造器
 
@@ -114,17 +114,17 @@ val customer = Customer("Joe Smith")
 
 注意在 Kotlin 中没有 `new` 关键字，
 
-创建嵌套、内部和匿名内部类的方法见 [嵌套类](https://blog.nex3z.com/2017/06/09/kotlin-reference-nested-classes/)。
+创建嵌套、内部和匿名内部类的方法见 [嵌套类](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/nested-classes.md)。
 
 ### 类的成员
 
 　　类中可以包含：
 
 - 构造器和初始化块
-- [函数](https://blog.nex3z.com/2017/06/11/kotlin-reference-functions/)
-- [属性](https://blog.nex3z.com/2017/06/04/kotlin-reference-properties-fields/)
-- [嵌套和内部类](https://blog.nex3z.com/2017/06/09/kotlin-reference-nested-classes/)
-- [对象声明](https://blog.nex3z.com/2017/06/10/kotlin-reference-object-expressions-declarations/#Object_declarations)
+- [函数](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/functions.md)
+- [属性](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/properties-and-fields.md)
+- [嵌套和内部类](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/nested-classes.md)
+- [对象声明](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/objects.md#对象声明)
 
 
 ## 继承
@@ -262,10 +262,10 @@ abstract class Derived : Base() {
 
 Kotlin 的类没有静态方法，这一点与 Java 和 C# 不同。多数情况下，建议使用包级函数来替代。
 
-如果需要让函数能够不依赖对象实例，并能够访问类的内部（如工厂方法），可以把它写为类中[对象声明（Object Declaration ）](https://blog.nex3z.com/2017/06/10/kotlin-reference-object-expressions-declarations/#Object_declarations)的成员。
+如果需要让函数能够不依赖对象实例，并能够访问类的内部（如工厂方法），可以把它写为类中[对象声明（Object Declaration ）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/objects.md#对象声明)的成员。
 
-具体来说，如果你在类中声明了一个[伴生对象（Companion Object）](https://blog.nex3z.com/2017/06/10/kotlin-reference-object-expressions-declarations/#Companion_Objects)，就可以仅用类名作为限定来调用伴生对象的成员，就像调用 Java / C# 的静态方法一样。
+具体来说，如果你在类中声明了一个[伴生对象（Companion Object）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/objects.md#伴生对象)，就可以仅用类名作为限定来调用伴生对象的成员，就像调用 Java / C# 的静态方法一样。
 
 
 ---
-<a name="注1"></a>【注 1】当 Java 类型被导入到 Kotlin 时，`java.lang.Object` 的引用会转换为 `Any`，Kotlin 通过[扩展函数（Extension Function）](https://blog.nex3z.com/2017/06/07/kotlin-reference-extensions/#Extension_Functions)来实现 `java.lang.Object` 的其他方法，如 `wait()`、`notify()`、`getClass()` 等。[【返回】](#注1返回)
+<a name="注1"></a>【注 1】当 Java 类型被导入到 Kotlin 时，`java.lang.Object` 的引用会转换为 `Any`，Kotlin 通过[扩展函数（Extension Function）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/extensions.md#扩展函数)来实现 `java.lang.Object` 的其他方法，如 `wait()`、`notify()`、`getClass()` 等。[【返回】](#注1返回)

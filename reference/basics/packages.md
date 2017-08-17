@@ -65,12 +65,12 @@ import bar.Bar as bBar // bBar stands for 'bar.Bar'
 `import` 关键字并不仅限于导入类，还可以用它来导入其他声明，如：
 
 - 顶层函数和属性；
-- 在[对象声明](https://blog.nex3z.com/2017/06/10/kotlin-reference-object-expressions-declarations/#Object_declarations)中的函数和属性；
-- [枚举常量](https://blog.nex3z.com/2017/06/09/kotlin-reference-enum-classes/)
+- 在[对象声明](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/objects.md#对象声明)中的函数和属性；
+- [枚举常量](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/enum-classes.md)
 
 Kotlin 中的所有声明的导入都通过常规的 import 关键字进行，没有单独的静态导入（[import static](https://docs.oracle.com/javase/8/docs/technotes/guides/language/static-import.html)）语法，这一点与 Java 不同。
 
 
 ## 顶层声明的可见性
 
-如果把一个顶层声明标记为 `private`，则该声明为文件私有（见[可见性修饰符](https://blog.nex3z.com/2017/06/06/kotlin-reference-visibility-modifiers/)）。
+如果把一个顶层声明标记为 `private`，则该声明为文件私有（见[可见性修饰符](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/visibility-modifiers.md)）。

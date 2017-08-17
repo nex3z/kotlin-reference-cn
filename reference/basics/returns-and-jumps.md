@@ -2,7 +2,7 @@
 
 Kotlin 有三种结构跳转表达式：
 
-- `return`：默认返回最近一层的函数或[匿名函数](https://blog.nex3z.com/2017/06/11/kotlin-reference-higher-order-functions-lambdas/#Anonymous_Functions)。
+- `return`：默认返回最近一层的函数或[匿名函数](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/lambdas.md#匿名函数)。
 - `break`：结束最近一层的循环。
 - `continue`：进行到最近一层循环的下一步。
 
@@ -13,7 +13,7 @@ val s = person.name ?: return
 ```
 
 <a name="注1返回"></a>
-以上三个表达式的类型为 [Nothing](https://blog.nex3z.com/2017/06/23/kotlin-reference-exceptions/#The_Nothing_type) [【注 1】](#注1)。
+以上三个表达式的类型为 [Nothing](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/exceptions.md#nothing-类型)[【注 1】](#注1)。
 
 ## break 和 continue 标签
 
@@ -52,7 +52,7 @@ fun foo() {
 ```
 
 <a name="注2返回"></a>
-上面代码中的 `return` 会返回最近一层的函数，也就是 `foo()`。（注意此类非局部的返回仅可用于传递给[内联函数](https://blog.nex3z.com/2017/06/11/kotlin-reference-inline-functions/)的 Lambda 表达式。[【注 2】](#注2)）如果想要让 Lambda 表达式返回，则必须为其添加标签，并使用标签限定的 `return`：
+上面代码中的 `return` 会返回最近一层的函数，也就是 `foo()`。（注意此类非局部的返回仅可用于传递给[内联函数](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/inline-functions.md)的 Lambda 表达式。[【注 2】](#注2)）如果想要让 Lambda 表达式返回，则必须为其添加标签，并使用标签限定的 `return`：
 
 ```kotlin
 fun foo() {
@@ -74,7 +74,7 @@ fun foo() {
 }
 ```
 
-此外，还可以使用[匿名函数](https://blog.nex3z.com/2017/06/11/kotlin-reference-higher-order-functions-lambdas/#Anonymous_Functions)代替 Lambda 表达式，匿名函数中的 `return` 会让匿名函数本身返回：
+此外，还可以使用[匿名函数](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/lambdas.md#匿名函数)代替 Lambda 表达式，匿名函数中的 `return` 会让匿名函数本身返回：
 
 ```kotlin
 fun foo() {
@@ -86,7 +86,7 @@ fun foo() {
 ```
 
 <a name="注3返回"></a>
-当标签和返回值同时出现在 `return` 后面时，分词器会优先标签限定的返回（[【注 3】](#注3)），如：
+当标签和返回值同时出现在 `return` 后面时，分词器会优先标签限定的返回[【注 3】](#注3)，如：
 
 ```kotlin
 return@a 1
