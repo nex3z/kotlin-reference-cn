@@ -32,7 +32,7 @@ fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
 }
 ```
 
-我们在函数名前先声明了泛型参数，这样才能在接收者类型表达式中使用该泛型，详见 [Generic functions](https://blog.nex3z.com/2017/06/08/kotlin-reference-12-generics/#Generic_functions)。
+我们在函数名前先声明了泛型参数，这样才能在接收者类型表达式中使用该泛型，详见 [Generic functions](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/generics.md#泛型函数)。
 
 
 ## 扩展是静态解析的
@@ -107,7 +107,7 @@ val <T> List<T>.lastIndex: Int
     get() = size - 1
 ```
 
-注意由于扩展不会向被扩展的类插入成员，并不能让扩展属性具有支持字段（[Backing Field](https://blog.nex3z.com/2017/06/04/kotlin-reference-6-properties-fields/#Backing_Fields)），所以扩展属性不能有初始化，只能通过显式提供 getter 和 setter 来定义扩展属性的行为。
+注意由于扩展不会向被扩展的类插入成员，并不能让扩展属性具有[支持字段（Backing Field）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/properties-and-fields.md#支持字段)，所以扩展属性不能有初始化，只能通过显式提供 getter 和 setter 来定义扩展属性的行为。
 
 例子：
 
@@ -118,7 +118,7 @@ val Foo.bar = 1 // 错误: 扩展属性不能有初始化
 
 ## 伴生对象的扩展
 
-如果一个类定义了伴生对象（[Companion Object](https://blog.nex3z.com/2017/06/10/kotlin-reference-15-object-expressions-declarations/#Companion_Objects)），则也可以为伴生对象定义扩展函数和扩展属性：
+如果一个类定义了[伴生对象（Companion Object）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/objects.md#伴生对象)，则也可以为伴生对象定义扩展函数和扩展属性：
 
 ```kotlin
 class MyClass {
@@ -162,7 +162,7 @@ fun usage(baz: Baz) {
 
 ```
 
-更多信息请参考[导入](https://blog.nex3z.com/2017/06/01/kotlin-reference-packages/#Imports)。
+更多信息请参考[导入](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/basics/packages.md#导入)。
 
 
 ## 声明扩展为成员
@@ -188,7 +188,7 @@ class C {
 }
 ```
 
-如果分发接收者和扩展接收者具有成员出现命名冲突，则扩展接收者优先，此时如果要访问分发接收者的成员，需要使用 [限定的 `this` 语法](https://blog.nex3z.com/2017/06/19/kotlin-reference-expression/)。
+如果分发接收者和扩展接收者具有成员出现命名冲突，则扩展接收者优先，此时如果要访问分发接收者的成员，需要使用 [限定的 `this` 语法](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/this-expression.md)。
 
 ```kotlin
 class C {
