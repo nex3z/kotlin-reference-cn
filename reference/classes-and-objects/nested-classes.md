@@ -32,7 +32,7 @@ class Outer {
 val demo = Outer().Inner().foo() // == 1
 ```
 
-关于在内部类中消除 `this` 歧义的方法，请参考[限定的 `this` 表达式](https://blog.nex3z.com/2017/06/19/kotlin-reference-expression/) 。
+关于在内部类中消除 `this` 歧义的方法，请参考[限定的 `this` 表达式](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/this-expression.md) 。
 
 
 ## 匿名内部类
