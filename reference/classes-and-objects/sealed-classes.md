@@ -15,7 +15,7 @@ object NotANumber : Expr()
 
 继承密封类子类的类（密封类的间接子类）可以定义在任何地方，不需要在同一个文件中。
 
-密封类的主要价值在于结合 [when 表达式](https://blog.nex3z.com/2017/06/01/kotlin-reference-control-flow/#When_Expression) 使用。如果可以证明语句已经覆盖了所有的情况，则不必为语句添加 `else` 子句。
+密封类的主要价值在于结合 [when 表达式](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/basics/control-flow.md#when-表达式) 使用。如果可以证明语句已经覆盖了所有的情况，则不必为语句添加 `else` 子句。
 
 ```kotlin
 fun eval(expr: Expr): Double = when(expr) {
