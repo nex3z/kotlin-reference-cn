@@ -17,7 +17,7 @@ class Bar {}
 
 - 如果没有指定可见性修饰符，则默认为 `public`，这意味着该声明在任何地方都可见。
 - 如果把声明标记为 `private`，则只在该声明所在的文件内可见。
-- 如果把声明标记为 `internal`，则在同一模块（[Module](https://blog.nex3z.com/2017/06/06/kotlin-reference-visibility-modifiers/#Modules)）下可见。
+- 如果把声明标记为 `internal`，则在同一[模块（Module）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/visibility-modifiers.md#模块)下可见。
 - `protected` 不能用于顶层声明。
 
 例子：
