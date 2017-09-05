@@ -268,7 +268,7 @@ fun <T> singletonList(item: T): List<T> {
 
 ## 内联函数
 
-内联函数的具体解释见[这里](https://blog.nex3z.com/2017/06/11/kotlin-reference-inline-functions/)。
+内联函数的具体解释见[这里](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/inline-functions.md)。
 
 
 ## 扩展函数
@@ -278,7 +278,7 @@ fun <T> singletonList(item: T): List<T> {
 
 ## 高阶函数和 Lambda
 
-高阶函数和 Lambda 表达式的具体解释见[这里](https://blog.nex3z.com/2017/06/11/kotlin-reference-higher-order-functions-lambdas/)。
+高阶函数和 Lambda 表达式的具体解释见[这里](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/lambdas.md)。
 
 
 ## 尾递归函数
