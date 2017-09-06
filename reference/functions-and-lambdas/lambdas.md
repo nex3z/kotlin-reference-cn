@@ -18,7 +18,7 @@ fun <T> lock(lock: Lock, body: () -> T): T {
 
 来看一下上面的代码：`body` 是[函数类型](#函数类型)`() -> T`，这个函数没有参数，有一个类型为 `T` 的返回值。它被 `lock` 保护，在 `try` 块中被调用，其结果由 `lock()` 函数返回。
 
-如果要调用 `lock()` 函数，可以向其传递另一个函数作为参数（详见[函数引用](https://blog.nex3z.com/2017/06/25/kotlin-reference-reflection/#Function_References)）。
+如果要调用 `lock()` 函数，可以向其传递另一个函数作为参数（详见[函数引用](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/reflection.md#函数引用)）。
 
 ```kotlin
 fun toBeSynchronized() = sharedResource.operation()
@@ -89,12 +89,12 @@ map.forEach { _, value -> println("$value!") }
 
 ### 在 Lambda 中解构（起自 1.1）
 
-在 Lambda 中使用解构的方法详见 [解构声明](https://blog.nex3z.com/2017/06/12/kotlin-reference-destructuring-declarations/#Destructuring_in_Lambdas_since_11)。
+在 Lambda 中使用解构的方法详见 [解构声明](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/destructuring-declarations.md#lambda-中的解构起自-11)。
 
 
 ## 内联函数
 
-有时候，使用[内联函数](https://blog.nex3z.com/2017/06/11/kotlin-reference-inline-functions/)可以提高高阶函数的性能。
+有时候，使用[内联函数](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/inline-functions.md)可以提高高阶函数的性能。
 
 
 ## Lambda 表达式和匿名函数
@@ -197,11 +197,11 @@ ints.filter(fun(item) = item > 0)
 
 注意匿名函数的参数总是在括号内传递，在括号外传递函数的简写语法仅适用于 Lambda 表达式。
 
-匿名函数和 Lambda 表达式的另一个区别是[非局部返回（Non-Local Returns）](https://blog.nex3z.com/2017/06/11/kotlin-reference-inline-functions/#Non-local_returns)的行为。没有标签的 `return` 总是会让使用 `fun` 关键字声明的函数返回，这意味着 Lambda 表达式中的 `return` 会让包围在外部的函数返回，而匿名函数中的 `return` 会让匿名函数本身返回。
+匿名函数和 Lambda 表达式的另一个区别是[非局部返回（Non-Local Returns）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/inline-functions.md#非局部返回)的行为。没有标签的 `return` 总是会让使用 `fun` 关键字声明的函数返回，这意味着 Lambda 表达式中的 `return` 会让包围在外部的函数返回，而匿名函数中的 `return` 会让匿名函数本身返回。
 
 ### 闭包
 
-Lambda 表达式和匿名函数（以及[局部函数](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/functions.md#局部函数)和[对象表达式](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/objects.md#对象表达式)）可以访问其*闭包*（Closure），也就是在外部作用域声明的变量。不同于 Java 的是，可以修改从闭包中获取的变量：
+Lambda 表达式和匿名函数（以及[局部函数](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/functions-and-lambdas/functions.md#局部函数)和[对象表达式](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/classes-and-objects/objects.md#对象表达式)）可以访问其*闭包*（Closure），也就是在外部作用域声明的变量。不同于 Java 的是，可以修改从闭包中获取的变量：
 
 ```kotlin
 var sum = 0
@@ -213,7 +213,7 @@ print(sum)
 
 ### 带接收者的函数字面值
 
-Kotlin 提供了在调用函数字面值时指定*接收者对象*（Receiver Object）的能力。在函数字面值内部，可以直接调用接收对象的方法，而不必使用额外的限定符。这类似于扩展函数，扩展函数内部也可以访问接收对象的成员。这一功能最重要的用途之一是实现[类型安全的 Groovy 风格建造者（Type-Safe Groovy-Style Builders）](https://blog.nex3z.com/2017/06/26/kotlin-reference-type-safe-builders/)。
+Kotlin 提供了在调用函数字面值时指定*接收者对象*（Receiver Object）的能力。在函数字面值内部，可以直接调用接收对象的方法，而不必使用额外的限定符。这类似于扩展函数，扩展函数内部也可以访问接收对象的成员。这一功能最重要的用途之一是实现[类型安全的 Groovy 风格建造者（Type-Safe Groovy-Style Builders）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/type-safe-builders.md)。
 
 此类函数字面值的类型是带有接收者的函数类型：
 
