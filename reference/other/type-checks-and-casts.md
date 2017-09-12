@@ -49,7 +49,7 @@ fun demo(x: Any) {
     }
 ```
 
-智能转换也适用于 [`when` 表达式](https://blog.nex3z.com/2017/06/01/kotlin-reference-control-flow/#When_Expression)和 [`while` 循环](https://blog.nex3z.com/2017/06/01/kotlin-reference-control-flow/#While_Loops)：
+智能转换也适用于 [`when` 表达式](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/basics/control-flow.md#when-表达式)和 [`while` 循环](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/basics/control-flow.md#while-循环)：
 
 ```kotlin
 when (x) {
@@ -75,7 +75,7 @@ when (x) {
 val x: String = y as String
 ```
 
-注意 `null` 不能被转换为 `String`，因为这个类型不是[可为空的（Nullable）](https://blog.nex3z.com/2017/06/22/kotlin-reference-null-safety/) 的。如果 `y` 为 `null` ，则上面的代码会抛出异常。为了达到 Java 中的转换语意，需要在转换的右边使用可为空的类型，像：
+注意 `null` 不能被转换为 `String`，因为这个类型不是[可为空的（Nullable）](https://github.com/nex3z/kotlin-reference-cn/blob/master/reference/other/null-safety.md) 的。如果 `y` 为 `null` ，则上面的代码会抛出异常。为了达到 Java 中的转换语意，需要在转换的右边使用可为空的类型，像：
 
 ```kotlin
 val x: String? = y as String?
