@@ -198,7 +198,7 @@ fun fill(dest: Array<in String>, value: String) {
 
 有时候并不知道类型参数的信息，但依旧想要确保类型安全。安全地方法是定义一个泛型类型的投射，使得该泛型的任意具体实例都是该投射的子类。
 
-为此，Kotlin 提供了**星号投射（Star-Projection ）**的语法：
+为此，Kotlin 提供了**星号投射**（Star-Projection）的语法：
 
 - 对于 `Foo<out T>`，其中 `T` 是一个具有上边界 `TUpper` 的协变类型参数，`Foo<*>` 相当于 `Foo<out TUpper>`。这意味着当 `T` 未知时，可以安全地从 `Foo<*>` 中读取 `TUpper` 类型的值。
 - 对于 `Foo<in T>`，其中 `T` 是一个逆变类型参数，`Foo<*>` 相当于 `Foo<in Nothing>`。这意味着如果 `T` 是未知的，就不能向 `Foo<*>` 安全地写入任何值。
